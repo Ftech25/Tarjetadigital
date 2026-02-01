@@ -1,8 +1,4 @@
-<%-- 
-    Document   : Rsvp
-    Created on : 1 feb 2026, 17:36:17
-    Author     : Charly Cimino
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

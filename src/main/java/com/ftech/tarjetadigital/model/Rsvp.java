@@ -3,10 +3,8 @@ package com.ftech.tarjetadigital.model;
 import java.time.LocalDateTime;
 
 public class Rsvp {
-
     private int idRsvp;
     private int idEvento;
-    private int idInvitado;
     private String asiste;
     private int acompanantes;
     private String restricciones;
@@ -14,9 +12,18 @@ public class Rsvp {
     private String comentario;
     private LocalDateTime fechaRespuesta;
 
-    // =========================
-    // GETTERS Y SETTERS
-    // =========================
+    // NUEVO CAMPO para el JSP
+    private String fechaRespuestaString;
+
+    // Getters y Setters existentes...
+    public LocalDateTime getFechaRespuesta() { return fechaRespuesta; }
+    public void setFechaRespuesta(LocalDateTime fechaRespuesta) { this.fechaRespuesta = fechaRespuesta; }
+
+    // Nuevo getter/setter
+    public String getFechaRespuestaString() { return fechaRespuestaString; }
+    public void setFechaRespuestaString(String fechaRespuestaString) { this.fechaRespuestaString = fechaRespuestaString; }
+
+    // resto de getters y setters...
 
     public int getIdRsvp() {
         return idRsvp;
@@ -32,14 +39,6 @@ public class Rsvp {
 
     public void setIdEvento(int idEvento) {
         this.idEvento = idEvento;
-    }
-
-    public int getIdInvitado() {
-        return idInvitado;
-    }
-
-    public void setIdInvitado(int idInvitado) {
-        this.idInvitado = idInvitado;
     }
 
     public String getAsiste() {
@@ -80,13 +79,5 @@ public class Rsvp {
 
     public void setComentario(String comentario) {
         this.comentario = comentario;
-    }
-
-    public LocalDateTime getFechaRespuesta() {
-        return fechaRespuesta;
-    }
-
-    public void setFechaRespuesta(LocalDateTime fechaRespuesta) {
-        this.fechaRespuesta = fechaRespuesta;
     }
 }
