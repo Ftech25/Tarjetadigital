@@ -1,0 +1,16 @@
+body {
+    background: radial-gradient(circle, #1c1c1c, #000);
+    color: #e6e6e6;
+}
+
+.invitation {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.divider,
+.btn-primary {
+    background: linear-gradient(45deg, #d4af37, #b8962e);
+    color: black;
+}

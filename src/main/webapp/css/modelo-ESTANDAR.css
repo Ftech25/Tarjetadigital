@@ -1,0 +1,15 @@
+body {
+    background: linear-gradient(180deg, #f7f3ef, #ffffff);
+    color: #333;
+}
+
+.invitation {
+    background: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.divider,
+.btn-primary {
+    background: #c2a875;
+    color: white;
+}

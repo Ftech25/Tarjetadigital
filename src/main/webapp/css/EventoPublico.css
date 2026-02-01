@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #f7f3ef, #ffffff);
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fade-in {
+    animation: fadeSlide 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* CONTENEDOR */
+.invitation {
+    max-width: 420px;
+    width: 90%;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.countdown {
+    margin: 20px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #c2a875;
+}
+
+
+/* TIPO EVENTO */
+.event-type {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #999;
+}
+
+/* TITULO */
+.event-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+/* LINEA */
+.divider {
+    width: 60px;
+    height: 2px;
+    background: #c2a875;
+    margin: 20px auto;
+}
+
+/* FECHA */
+.event-date {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* MENSAJE */
+.welcome-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* UBICACION */
+.location {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* BOTON */
+.btn-primary {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #c2a875;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #a8905e;
+    transform: translateY(-2px);
+}
+
+.rsvp-form input,
+.rsvp-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.map {
+    margin: 25px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery img {
+    width: 80%;
+    border-radius: 15px;
+    scroll-snap-align: center;
+}
+

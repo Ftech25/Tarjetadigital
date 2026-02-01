@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(180deg, #000, #222);
+    color: #f5f5f5;
+}
+
+.invitation {
+    background: #111;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.divider {
+    background: gold;
+}
+
+.btn-primary {
+    background: gold;
+    color: black;
+}
